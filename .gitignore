@@ -1,0 +1,24 @@
+# Ignore the .vscode folder
+.vscode/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore node_modules
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore compiled Java files
+*.class
+
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Ignore gitignore
+.gitignore
+
+
+
+

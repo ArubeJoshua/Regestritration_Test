@@ -1,14 +1,15 @@
-package Reg_system;
+package com.example.Registration_sys.classes;
 
+import java.util.Date;
 
 public class User {
     private String userName;
     private String firstName;
     private String lastName;
-    private String dateOfBirth;
+    private Date dateOfBirth;
 
     //initializing the constructor
-    public User(String userName, String firstName, String lastName, String dob) {
+    public User(String userName, String firstName, String lastName, Date dob) {
         this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -40,11 +41,11 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getDob() {
+    public Date getDob() {
         return dateOfBirth;
     }
 
-    public void setDob(String dob) {
+    public void setDob(Date dob) {
         this.dateOfBirth = dob;
     }
 }

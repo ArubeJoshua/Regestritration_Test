@@ -58,5 +58,23 @@ public class User {
           ", Lat Name: " + Objects.toString(lastName, "Unknown") +
           ", Date of Birth: " + Objects.toString(dateOfBirth, "Unknown") + "\n";
     }
+
+     // Overriding equals method
+     @Override
+     public boolean equals(Object o) {
+         if (this == o) return true;
+         if (o == null || getClass() != o.getClass()) return false;
+         User user = (User) o;
+         return Objects.equals(userName, user.userName) &&
+                Objects.equals(firstName, user.firstName) &&
+                Objects.equals(lastName, user.lastName) &&
+                Objects.equals(dateOfBirth, user.dateOfBirth);
+     }
+ 
+     // Overriding hashCode method
+     @Override
+     public int hashCode() {
+         return Objects.hash(userName, firstName, lastName, dateOfBirth);
+     }
 }
 
